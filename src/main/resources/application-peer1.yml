@@ -1,0 +1,16 @@
+server:
+  port: 8861
+spring:
+  profiles: peer1
+  application:
+    name: service-registry
+eureka:
+  instance:
+    hostname: peer1
+  server:
+    enable-self-preservation: false
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    serviceUrl:
+      defaultZone: http://localhost:8862/eureka/
