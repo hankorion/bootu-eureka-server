@@ -3,7 +3,7 @@ server:
 spring:
   profiles: peer2
   application:
-    name: service-registry
+    name: bootu-eureka
 eureka:
   instance:
     hostname: peer2
@@ -13,4 +13,4 @@ eureka:
     register-with-eureka: false
     fetch-registry: false
     serviceUrl:
-      defaultZone: http://localhost:8861/eureka/
+      defaultZone: http://bootu-eureka-1:8861/eureka/
